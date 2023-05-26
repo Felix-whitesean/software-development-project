@@ -1,0 +1,49 @@
+table{
+    width: 90vw;
+    border: 3px solid rgb(56, 182, 255);
+    box-shadow: 3px 3px white;
+    text-align: center;
+    background: rgb(20, 20, 20,0.9);
+}
+td{
+    border-bottom: 2px solid white;
+    border-right: 2px solid green;
+}
+tr th{
+    border: 3px solid crimson;
+    color: rgb(56, 182, 255)
+}
+input[type='checkbox'] {
+    cursor: pointer;
+    accent-color:orangered;
+}
+nav a{
+   color: rgb(6, 8, 56);
+   text-decoration: none;
+   min-width: 23px;
+   border: 2px solid rgb(56, 182, 255);
+   box-shadow: 2px 2px crimson;
+   padding: 4px;
+   border-radius: 12px;
+   margin: 6% auto;
+   background: rgb(255, 255, 255);
+}
+nav a:hover{
+    color:rgb(56, 182, 255);
+    background: none;
+    border: 2px solid rgb(56, 182, 255);
+}
+nav{
+    text-align: center;
+    border: 3px solid white;
+    margin-left: 20px;
+    padding: 16px;
+    max-width: 450px;
+}
+@media only screen and (max-width: 698px){
+    nav{
+        display: flex;
+        flex-direction: column;
+        
+    }
+}

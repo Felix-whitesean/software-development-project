@@ -1,0 +1,113 @@
+.navbar{
+    height: auto;
+    padding: 1%;
+    float: right;
+}
+h3{
+    text-decoration: underline;
+    color: rgb(56, 182, 255);
+    padding-left: 14px;
+    text-transform: uppercase;
+    font-style: italic;
+}
+i{
+    visibility: hidden;
+    color: tramsparent;
+}
+.name h2{
+    text-decoration: underline;
+    color: rgb(6, 8, 56);
+    background: rgb(246, 252, 255,0.7);
+    padding-left: 14px;
+    text-transform: uppercase;
+    border-radius: 15px;
+}
+.navbar a{
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    min-width: 40px;
+    min-width: 90px;
+    background: rgb(6, 8, 8, 0.3);
+    padding: 10px;
+    font-size: 20px;
+    border-radius: 15px;
+    font-weight: bold;
+    border: 3px solid white;
+}
+.navbar a:hover{
+    text-decoration: underline;
+    color:rgb(252, 3, 53);
+    border: none;
+}
+#signup{
+    background: white;
+    color: red;
+    text-transform: uppercase;
+    text-decoration: underline;
+}
+#signup:hover{
+    color: black;
+}
+.head{
+    display: flex;
+    border-radius: 25px;
+    padding: 1.5%;
+    margin-left: 23%;
+}
+.head img{
+    margin-top: 20px;
+    width: 100px;
+    height: 100px;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    background: rgb(236, 232, 232,0.28);
+
+}
+
+@media only screen and (max-width: 928px) {
+    .navbar{
+        display: block;
+        padding: .2%;
+        background-repeat: no-repeat;
+        margin-top: 32px;  
+    }
+    .navbar a{
+        font-size: 25px;
+        display: block;
+        text-align: center;
+        background:rgb(10,1,2,0.5);
+        padding: 2%;
+        width: 169px;
+        margin-left: 10px;
+        margin-top: 2%;
+        border-radius: 15px;
+        transition:step-end;
+        text-transform: uppercase;
+    }
+    .navbar a:hover{
+       border-bottom: 3px solid red;
+        color: rgb(255, 82, 52);
+    }
+    .head{
+        margin-left: 2%;
+    }
+    .head{
+        display: block;
+    }
+    a i{
+        visibility: visible;
+        font-size: 39px;
+        padding-right: 13px;
+    }
+    .name h2{
+        max-width: 200px;
+        padding: 1.2%;
+        background: rgb(6, 8, 8, 0.9);
+        color: white;
+        text-align: left;
+        border-radius: 12px;
+    }
+}

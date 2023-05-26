@@ -1,0 +1,93 @@
+body{
+    background-image: url('bg5.jpg');
+    background-repeat: no-repeat;
+    background-size: 100vw 100vh;
+    background-attachment: fixed;
+}
+.about{
+    background: rgb(10,1,2,0.5);
+    background: rgb(150, 150, 150, 0.5);
+    background: transparent;
+    height: auto;
+    color: rgb(12,130,128,0.8);
+    color: white;
+}
+span{
+    color: whitesmoke;
+}
+h4{
+    background: rgb(2, 6, 22,0.3);
+    border-radius: 29px;
+    padding: 2%;
+    max-width: 390px;
+    text-align: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+h4 li{
+    list-style: none;
+    text-align: left;
+    color: white;
+}
+h4 img{
+    height: 30px;
+    width: 30px;
+    rotate: -35deg;
+    background: rgb(255, 246, 242,0.9);
+    border-radius: 52%;
+}
+.moto{
+    color: rgb(10,0,7,0.9);
+    text-decoration: underline;
+}
+
+.process{
+    background: rgb(0,0,7,0.5);
+    font-size: 18px;
+    width: 90%;
+    max-width: 500px;
+    padding: 2%;
+    border-radius: 29px;
+    margin: auto;
+    color: rgb(5, 99, 15);
+    color: rgb(249, 77, 47);
+    color: rgb(56, 182, 255);
+    font-style: italic;
+    font-weight: bold;
+    background-image: url('regb.jpg');
+    background-size: cover;
+}
+.process h2{
+    color: rgb(0,0,0);
+    text-align: center;
+}
+.process ol{
+    background: rgb(0,0,0, 0.6);
+    border-radius: 13px;
+}
+.body{
+    display: flex;
+    flex-direction: row;
+    margin: 2%;
+    margin-top: 1%;
+}
+@media only screen and (max-width: 928px) {
+    .process{
+        width: 90vw;
+        margin-top: 5%;
+    }
+    .body{
+        display: block;
+    }
+    h4{
+        margin: auto;
+    }
+
+}
+h4 a{
+    text-decoration: none;
+    color: rgb(56, 182, 255);
+    border-radius: 15px;
+    background: rgb(255,255,255, 0.9);
+    padding: 3px;
+}

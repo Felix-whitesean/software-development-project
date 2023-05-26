@@ -1,0 +1,86 @@
+body{
+    background: url('bg5.jpg');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    color: white;
+    background-size: 100vw 100vh;
+    
+}
+form{
+    margin: auto;
+    max-width: 500px;
+    background: rgb(0,0,0,0.5);
+    padding: 2%;
+    border: 4px solid rgb(56, 182, 255);
+    border-radius: 12px;
+    align-items: center;
+    text-align: center;
+}
+input{
+    height: 30px;
+    border-radius: 20px;
+    padding: 5px;
+    padding-left: 10px;
+    font-size: 18px;
+    outline: none;
+    text-align: center;
+    background: rgb(0,0,0,0.1);
+    border: transparent;
+    color: rgb(56, 182, 255);
+    margin-left: 20px;
+}
+input:focus{
+    outline: none;
+}
+fieldset{
+    border: 3px solid white;
+    width: 33px;
+    margin: auto;
+    border-radius: 25px;
+    padding: 0;
+}
+span{
+    color: crimson;
+    padding-left: 22px;
+}
+label{
+    font-size: 18px;
+    text-transform: capitalize;
+    text-align: left;
+    margin: 23% auto;
+}
+button{
+    background: rgb(56, 182, 255);
+    box-shadow: 2px 2px rgb(26, 28, 96,0.5);
+    padding: 10px;
+    border-radius: 20px;
+    text-transform: uppercase;
+    border: 3px solid rgb(6, 8, 56);
+    cursor: pointer;
+    font-size: 18px;
+}
+fieldset select{
+    cursor: pointer;
+    border-radius: 12px;
+    height: 36px;
+    border: transparent;
+    min-width: 270px;
+    text-align: center;
+    font-size: 16px;
+    color:rgb(56, 182, 255);
+    outline: none;
+    background: transparent;
+}
+fieldset option{
+    background:rgb(6, 8, 9, .3);
+    color: rgb(56, 182, 255);
+    cursor: pointer;
+}
+fieldset i{
+    position: absolute;
+    margin-left: 3px;
+    margin-top: 3px;
+    color: rgb(56, 182, 255);
+    padding: 11px;
+    
+}
