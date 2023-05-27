@@ -32,12 +32,13 @@
     $count = mysqli_num_rows($result);
 
     if($count == 1){
-        $_SESSION['uname'] =$uname;
-        $_SESSION['pass'] =$pass;
+        $_SESSION['uname'] = $uname;
+        $_SESSION['pass'] = $pass;
         header('Location:register.php');
     }else {
+        echo"Unable to log in";
+        die(2.5);
         header('Location:login.php');
-        echo"unable to log in";
         ?>
         </body>
         </html>
