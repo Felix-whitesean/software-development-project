@@ -101,15 +101,16 @@
                         <img src="logo3.png" alt="logo"style="width: 80px; height:80px;background: rgb(56, 182, 255,0.6);
                         border-top-right-radius: 50%;border-top-left-radius: 50%;border-bottom-left-radius: 15px;border-bottom-right-radius: 15px;">
                         <h3>INSERT RECORDS</h3>
-                        <fieldset style="display: flex; flex-direction: column;">
-                            <label for="reg_no"style="min-height: 33px;">Registration number:</label>
-                            <input type="text" name="reg_no" style="max-width: 333px;min-height: 40px" required>
-                        </fieldset>
 
+                        <label for="reg_no"style="min-height: 33px;">Registration number:</label>
                         <fieldset style="display: flex; flex-direction: column;">
-                            <label for="name"style="min-height: 33px;">Name:</label>
+                            <input type="text" name="reg_no" style="max-width: 333px;min-height: 40px" required>
+                        </fieldset><br>
+
+                        <label for="name"style="min-height: 33px;">Name:</label>
+                        <fieldset style="display: flex; flex-direction: column;">
                             <input type="text" name="stud_name" style="max-width: 333px;min-height: 40px" required>
-                        </fieldset>
+                        </fieldset><br>
 
                         <button type="submit">SUBMIT</button>
                     </form>

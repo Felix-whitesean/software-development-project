@@ -11,8 +11,8 @@ h3{
     font-style: italic;
 }
 i{
-    visibility: hidden;
-    color: tramsparent;
+    color: white;
+    padding-right: 4px;
 }
 .name h2{
     text-decoration: underline;
@@ -41,7 +41,7 @@ i{
     border: none;
 }
 #signup{
-    background: white;
+    background: rgb(56, 182, 255);
     color: red;
     text-transform: uppercase;
     text-decoration: underline;
@@ -72,7 +72,13 @@ i{
         display: block;
         padding: .2%;
         background-repeat: no-repeat;
-        margin-top: 32px;  
+        margin-top: 2px;  
+    }
+    nav a{
+        visibility:none;
+    }
+    i{
+        visibility: visible;
     }
     .navbar a{
         font-size: 25px;
@@ -103,7 +109,7 @@ i{
         padding-right: 13px;
     }
     .name h2{
-        max-width: 200px;
+        max-width: 400px;
         padding: 1.2%;
         background: rgb(6, 8, 8, 0.9);
         color: white;
