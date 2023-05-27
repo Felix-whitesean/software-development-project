@@ -24,7 +24,7 @@
             </nav>  
         </div>
         <div class="head">
-            <img src="logo3.png" alt="" style="margin-top: 20px;width: 100px;height: 100px;border-top-left-radius: 50%;border-top-right-radius: 50%;border-bottom-right-radius :15px;border-bottom-left-radius: 15px;background: white;">
+            <img src="logo3.png" alt="LOGO">
             <div class="name">
                 <h2>Draxylstar Innovators</h2>
                 <h3>Think, try, innovate</h3>
