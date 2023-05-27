@@ -11,7 +11,7 @@ h3{
     font-style: italic;
 }
 i{
-    color: white;
+    color:rgb(56, 182, 255);
     padding-right: 4px;
 }
 .name h2{
@@ -23,21 +23,20 @@ i{
     border-radius: 15px;
 }
 .navbar a{
-    color: white;
+    color:rgb(56, 182, 255);
     text-decoration: none;
     text-align: center;
-    min-width: 40px;
     min-width: 90px;
     background: rgb(6, 8, 8, 0.3);
     padding: 10px;
     font-size: 20px;
     border-radius: 15px;
     font-weight: bold;
-    border: 3px solid white;
+    text-transform: uppercase;
 }
 .navbar a:hover{
     text-decoration: underline;
-    color:rgb(252, 3, 53);
+    color:rgb(56, 182, 255);
     border: none;
 }
 #signup{
@@ -45,6 +44,12 @@ i{
     color: red;
     text-transform: uppercase;
     text-decoration: underline;
+}
+#signup i{
+    color: rgb(6, 8, 56);
+}
+#signup a{
+    padding-left: 32px;
 }
 #signup:hover{
     color: black;
@@ -74,28 +79,31 @@ i{
         background-repeat: no-repeat;
         margin-top: 2px;  
     }
-    nav a{
-        visibility:none;
-    }
     i{
+        align-self: left;
         visibility: visible;
+        padding-left: 15px;
+    }
+    #signup i{
+        color: red;
+    }
+    #signup i:hover{
+        color: rgb(10,1,2);
     }
     .navbar a{
-        font-size: 25px;
+        font-size: 17px;
         display: block;
-        text-align: center;
-        background:rgb(10,1,2,0.5);
-        padding: 2%;
-        width: 169px;
-        margin-left: 10px;
+        text-align: left;
+        padding-left: 2%;
+        width: 130px;
+        //margin-left: 10px;
         margin-top: 2%;
         border-radius: 15px;
-        transition:step-end;
         text-transform: uppercase;
     }
     .navbar a:hover{
-       border-bottom: 3px solid red;
-        color: rgb(255, 82, 52);
+       border-bottom: 3px solid rgb(56, 182, 255);
+       text-decoration: none;
     }
     .head{
         margin-left: 2%;
@@ -107,6 +115,7 @@ i{
         visibility: visible;
         font-size: 39px;
         padding-right: 13px;
+        color:rgb(56, 182, 255);
     }
     .name h2{
         max-width: 400px;
