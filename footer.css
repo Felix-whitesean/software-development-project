@@ -1,0 +1,118 @@
+.footer{
+    padding: 3%;
+    width: 90vw;
+    background: rgb(6, 8, 56);
+    color:rgb(56, 182, 255);
+    font-family:'Courier New', Courier, monospace;
+    height:  auto;
+    margin-bottom: -12px;
+    padding-bottom: -50px;
+    margin-left: -12px;
+    margin-right: -12px; 
+    display: flex;
+}
+.follow a{
+    text-decoration: none;
+}
+.follow a:hover{
+    color:rgb(56, 182, 255);
+}
+.fa-square-phone{
+    color: white;
+    transform:rotate(-10deg);
+    margin-right: 2px;
+}
+.fa-square-whatsapp{
+    color: rgb(33, 103, 44);
+    transform:rotate(-10deg);
+    margin-right: 2px;
+}
+.fa-square-twitter{
+    color: rgb(17,171,255);
+    transform:rotate(-10deg);
+    margin-right: 2px;
+}
+.fa-square-instagram{
+    background: linear-gradient(30deg, rgb(245,133,42),rgb(254, 218, 119), rgb(221,42,123),rgb(129, 52, 175),rgb(81, 91,212));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline-block;
+    transform:rotate(-10deg);
+    margin-right: 2px;
+}
+.fa-square-github{
+    color: white;
+    transform:rotate(-10deg);
+    margin-right: 2px;
+}
+.links{
+    display: flex;
+    flex-direction: column;
+    text-transform: uppercase;
+    padding: 3%;
+    margin: auto;
+}
+.follow{
+    max-width: 400px;
+    padding: 1.5%
+}
+.links a{
+    padding: 10px;
+    text-decoration: none;
+    color:rgb(17,171,255)
+}
+.links a:hover{
+    color: white;
+    width: auto;
+    border: 1px solid rgb(56, 182, 255);
+}
+textarea{
+    max-width: 320px;
+    resize: none;
+    overflow: hidden;
+    padding: 23px;
+    border-radius: 12px;
+    background: rgb(56, 182, 255, 0.5);
+    color: white;
+    outline: none;
+    margin: 5% auto;
+    height: auto;
+    min-height: 100px;
+    border: 3px solid rgb(56, 182, 255);
+    text-align: center;
+}
+textarea:hover{
+    padding: 23px;
+}
+input{
+    padding: 2%;
+    outline: none;
+    background: rgb(56, 182, 255, 0.3);
+    border-radius:19px;
+    color: white;
+    border: 3px solid rgb(56, 182, 255);
+    text-align: center;
+}
+@media only screen and (max-width: 789px){
+    .footer{
+        display: inline-block;
+        margin: auto;
+    }
+    .links a{
+        max-width: 200px;
+    }
+    .follow{
+        width: 100%;
+    }
+    .follow i{
+        max-width: 32px;
+    }
+    .comment{
+        width:60%;
+        margin: auto;
+        margin-left: 5%;
+    }
+    .comment{
+        background:rgb(6, 8, 56);
+    }
+}

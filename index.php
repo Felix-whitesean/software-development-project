@@ -15,11 +15,11 @@
     <div class="bg">
         <div class="body">
             <div class="about">
-                <h4>The <a href="Register.php">Register App</a> hopes to solve the problems posed by the manual <span>Paper Register.</span> 
+                <h4>The Register App hopes to solve the problems posed by the manual <span>Paper Register.</span> </a>
                 <ul>
-                    <li> <img src="check-button.png" alt="">Efficient 💯</a></li>
-                    <li><img src="check-button.png" alt="">Available 🚀</li>
-                    <li><img src="check-button.png" alt="">Reliable 🚁</li>
+                    <li> <img src="check-button.png" alt="">Efficient 💯</li>
+                    <li> <img src="check-button.png" alt="">Available 🚀</li>
+                    <li> <img src="check-button.png" alt="">Reliable 🚁</li>
                 </ul>
                 <a href="#">Read more</a></h4>
             </div>
@@ -28,16 +28,19 @@
                     Use the register:
                 </h2>
                 <ol>
-                    <li>Signup for the website by pressing the signup button above</li>
-                    <li>Login to the website an register to use the register by filling the institution name, department and class</li>
-                    <li>Check against the name of the student as either present or absent</li>
-                    <li>Submit the results of the attendance register and then the email would be sent with the attendance register</li>
+                    <li>Signup for the website by pressing the signup button above.</li>
+                    <li>Sign in to the website, and press <a href="register.php" style="color: rgb(6, 8, 56); text-decoration: none;">REGISTER APP</a> above.</li>
+                    <li>Check against the name of the student as either present or absent.</li>
+                    <li>Press submit button. </li>
                 </ol>
             </div>
             <div class="about">
 
-            </div>
+            </div>            
         </div>
     </div>
+    <?php
+    include('footer.html');
+    ?>
 </body>
 </html>
