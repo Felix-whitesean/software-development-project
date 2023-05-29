@@ -27,7 +27,7 @@
         </head>
         <body style="background: url('bg5.jpg');background-attachment: fixed;background-repeat: no-repeat;color: white;background-size: 100vw 100vh;">
             <meta http-equiv="refresh" content="5,login.php">
-            <h3><?php echo"RECORD INSERTED SUCCESSFULLY";?></h3>
+            <h3 style="color: rgb(17, 84, 255);"><i class="fa-duotone fa-check"></i><?php echo"RECORD INSERTED SUCCESSFULLY <br> REDIRECTING..."?></h3>
         </body>
         <?php
     }

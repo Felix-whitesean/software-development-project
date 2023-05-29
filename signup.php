@@ -50,9 +50,9 @@
             </fieldset>
             <br>
 
-            <legend><label for="lvl">Level:</label></legend>
+            <legend><label for="lvl">Level: <span>*</span></label></legend>
             <fieldset>
-                <select name="lvl" id="int_type">
+                <select name="lvl" id="int_type" required>
                     <option disabled="disabled" selected="selected" style="display:none;">Select the institution</option>
                     <option value="university">University</option>
                     <option value="tvet">TVET</option>
@@ -68,10 +68,10 @@
             </fieldset>
             <br>
 
-            <legend><label for="department" >Department:</label></legend>
+            <legend><label for="department" >Department: <span>*</span></label></legend>
             <fieldset>
                 <i class="fa fa-building-user"></i>
-                <input type="text"  name="department">
+                <input type="text"  name="department" required>
             </fieldset>
             <br>
 
@@ -90,7 +90,6 @@
         </form>
 
     </div>
-    
-    
+     
 </body>
 </html>

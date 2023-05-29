@@ -55,8 +55,8 @@
                                         <th>STATUS</th>
                                     </tr>
                                     <?php
-                        $sql2 = "SELECT * FROM $tableName";
-                        $result2 = mysqli_query($con, $sql2);
+                                $sql2 = "SELECT * FROM $tableName";
+                                $result2 = mysqli_query($con, $sql2);
                         if(mysqli_num_rows($result2)>0){
                             
                             while($row = mysqli_fetch_assoc($result2)) {

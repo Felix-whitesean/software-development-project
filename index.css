@@ -79,6 +79,12 @@ h4 img{
     margin: 2%;
     margin-top: 1%;
 }
+.comments{
+    width: 320px;
+    margin: auto;
+    max-height: 330px;
+    z-index: -1;
+}
 @media only screen and (max-width: 928px) {
     .process{
         width: 90vw;

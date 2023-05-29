@@ -33,11 +33,38 @@
                     <li>Check against the name of the student as either present or absent.</li>
                     <li>Press submit button. </li>
                 </ol>
-            </div>
-            <div class="about">
-
-            </div>            
+            </div>           
         </div>
+        <div class="comments">
+                <?php
+                    $con = mysqli_connect("localhost","root","","register");
+                    if(mysqli_connect_error()){
+                        echo"Failed to connect to database".mysqli_connect_error();
+                        exit();
+                    }
+                    $sql = "SELECT * FROM comments";
+                    $result = mysqli_query($con,$sql);
+
+                    $count = mysqli_num_rows($result);
+                    while($row = mysqli_fetch_assoc($result)) {
+                        $count = mysqli_num_rows($result);
+                        ?>
+                        <td><i class="fa-solid fa-user fa-3x"></i>
+                            <i class="fa-sharp fa-solid fa-quote-left" style="text-align: center;"></i>
+                        <h5 style="min-height: 35px;margin: auto;text-align: center;color: white;background:rgb(56, 182, 255, .6);padding: 3%;border-radius: 23px;">
+                        <?php
+                        $text =$row['comment_text'];
+                        echo"$text";
+                        ?>
+                        </h5>
+                        </td>
+
+                        <?php
+                        
+                    }
+                ?>
+
+            </div> 
     </div>
     <?php
     include('footer.html');

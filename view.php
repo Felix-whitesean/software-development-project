@@ -35,9 +35,7 @@
         $_SESSION['pass'] =$pass;
         header('Location:register.php');
     }else {
-        ob_start();
         echo"Wrong username or password";
-        ob_flush();
         sleep(5);
         header('Location:login.php');
         ?>

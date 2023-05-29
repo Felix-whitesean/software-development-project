@@ -1,14 +1,12 @@
 .footer{
     padding: 3%;
-    width: 90vw;
+    width: 95vw;
     background: rgb(6, 8, 56);
     color:rgb(56, 182, 255);
     font-family:'Courier New', Courier, monospace;
     height:  auto;
-    margin-bottom: -12px;
+    margin-bottom: 0;
     padding-bottom: -50px;
-    margin-left: -12px;
-    margin-right: -12px; 
     display: flex;
 }
 .follow a{
