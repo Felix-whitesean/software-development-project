@@ -25,28 +25,31 @@
             <legend><label for="username">Username:<span>*</span></label></legend>
             <fieldset>
                 <i class="fa-regular fa-user"></i>
-                <input type="text" name="username"required>
+                <input type="text" name="username" id="username" required>
             </fieldset>
             <br>
 
             <legend><label for="password">Password:<span>*</span></label></legend>
             <fieldset>
                 <i class="fa fa-lock"></i>
-                <input type="password" name="password" required>              
+                <input type="password" name="password" id="pass" required>
+                <label for="check"><i id="show_pss" style="color: rgb(255,255,255,.6)" class="fa-solid fa-eye-slash" onclick="showPassword()"></i></label>
+                <input type="checkbox" name="check" id="check" style="display: none;">   
             </fieldset>
             <br>
 
             <legend><label for="conf_password">Confirm Password:<span>*</span></label></legend>
             <fieldset>
                 <i class="fa fa-lock"></i>
-                <input type="password" name="conf_password" required>              
+                <input type="password" name="conf_password" id="conf_pass" required>
+                <label for="check2"><i id="show_conf_pss" style="color: rgb(255,255,255,.6)" class="fa-solid fa-eye-slash" onclick="showConfPassword()"></i></label>
+                <input type="checkbox" name="check" id="check2" style="display: none;">            
             </fieldset>
             <br>
-
             <legend><label for="email">Email:<span>*</span></label></legend>
             <fieldset>
                 <i class="fa-regular fa-envelope"></i>
-                <input type="email" name="email" required>              
+                <input type="email" name="email" id="email" required>              
             </fieldset>
             <br>
 
@@ -64,21 +67,21 @@
             <legend><label for="institution" required>Institution name:<span>*</span></label></legend>
             <fieldset>
                 <i class="fa fa-school-flag"></i>
-                <input type="text"  name="inst_name">
+                <input type="text"  name="inst_name" id="institution" required>
             </fieldset>
             <br>
 
             <legend><label for="department" >Department: <span>*</span></label></legend>
             <fieldset>
                 <i class="fa fa-building-user"></i>
-                <input type="text"  name="department" required>
+                <input type="text"  name="department" id="department" required>
             </fieldset>
             <br>
 
             <legend><label for="class" required>Class:<span>*</span></label></legend>
             <fieldset>
                 <i class="fa-solid fa-screen-users"></i>
-                <input type="text"  name="class">
+                <input type="text"  name="class" id="class">
             </fieldset>
             <br>
 
@@ -86,10 +89,9 @@
             <label for="conditions" required>I agree to the </label>
             <a href="#" target="_Blank" download>Terms and conditions</a>
             <br><br>
-            <button type="submit">Submit</button>
+            <button type="submit" onclick='return formValidation()'>Submit</button>
         </form>
-
     </div>
-     
+     <script src="signup.js"></script>
 </body>
 </html>

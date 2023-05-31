@@ -39,7 +39,21 @@ fieldset{
     width: 33px;
     margin: auto;
     border-radius: 25px;
-    padding: 0;
+    padding: 2px;
+}
+#show_pss{
+    float: right;
+    margin-left: -49px;
+    position: absolute;
+    z-index: 1;
+    cursor: pointer;
+}
+#show_conf_pss{
+    float: right;
+    margin-left: -49px;
+    position: absolute;
+    z-index: 1;
+    cursor: pointer;
 }
 span{
     color: crimson;

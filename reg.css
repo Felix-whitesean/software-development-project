@@ -43,7 +43,6 @@ nav{
 @media only screen and (max-width: 698px){
     nav{
         display: flex;
-        flex-direction: column;
-        
+        flex-direction: column;   
     }
 }
