@@ -33,12 +33,11 @@
     if($count == 1){
         $_SESSION['uname'] =$uname;
         $_SESSION['pass'] =$pass;
-        header('Location:register.php');
+        header('Location:check_location.php');
     }else {
-        echo"Wrong username or password";
-        sleep(5);
-        header('Location:login.php');
         ?>
+        <h4 style="color: red;">Wrong username or password, please try again<br> Redirecting...</h4>
+        <meta http-equiv="refresh" content="5, login.php">
         </body>
         </html>
         <?php

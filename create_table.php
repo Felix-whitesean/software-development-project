@@ -18,6 +18,10 @@
     $department = $_POST['department'];
     $class = $_POST['class'];
     $pass= $_POST['password'];
+    $latt = $_POST['lat'];
+    $lng = $_POST['long'];
+    $lat = (floor($latt * 100))/100;
+    $long = (floor($lng * 100))/100;    
     $conf_pass = $_POST['conf_password'];
     $pass= base64_encode($pass);
     $conf_pass= base64_encode($conf_pass);
@@ -31,19 +35,20 @@
         echo"Failed to connect to the database: ". mysqli_connect_error();
         exit();
     }
-    $sql = "INSERT INTO members(username, email, institution,lvl, department,class, passwd, joined_at)
-    VALUES('$uname','$email', '$inst_name','$lvl','$department','$class','$pass',now())";
+    if($lat != 0 && $long != 0){
+    $sql = "INSERT INTO members(username, email, institution,lvl, department,class, passwd,lattitude,longitude, joined_at)
+    VALUES('$uname','$email', '$inst_name','$lvl','$department','$class','$pass','$lat','$long',now())";
 
     $sql2 = "CREATE TABLE $tableName (id INT(5) NOT NULL AUTO_INCREMENT , reg_no VARCHAR(30) NOT NULL , stud_name VARCHAR(50) NOT NULL ,reg_time DATETIME NOT NULL , PRIMARY KEY (id), UNIQUE reg_id (reg_no)) ENGINE = InnoDB;";
     ?>
     <p style="padding: 2%;background: rgb(0,0,9,0.6), color: red;">
-        <?php
+    <?php
     if (mysqli_query($con, $sql)) {
             sleep(1.5);
             if ($pass == $conf_pass){
                 if(mysqli_query($con, $sql2)){
                     $paswd = base64_decode($pass);
-                    echo"LOGIN DETAILS: $uname password: $paswd";
+                    echo"LOGIN DETAILS: Username-: $uname Password-: $paswd";
                     ?>
                     <form method="POST" action="update.php">
                         <h3 style="color: red; text-decoration: underline;">Alert! Do not skip this.</h3>
@@ -94,7 +99,12 @@
         die();
         }
         mysqli_close($con);
-?>
-</p>
+    ?>
+    </p>
+    <?php
+    }else{
+        echo"Unable to enter details";
+    }
+    ?>
 </body>
 </html>

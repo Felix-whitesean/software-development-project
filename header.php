@@ -17,7 +17,7 @@
     <div class="bg">
         <div class="navbar">
             <nav>
-                <a href="Register.php">Register App</a>
+                <a href="login.php">Register App</a>
                 <a href="index.php"><i class="fa fa-house fa-sm"></i>HOME</a>
                 <a href="login.php"><i class="fa fa-arrow-right-to-bracket fa-sm"></i>Sign In</a>
                 <a id="signup" href="signup.php"><i class="fa fa-user-plus fa-sm"></i>Sign Up</a>

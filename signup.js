@@ -63,4 +63,42 @@ function showConfPassword(){
         confirm_pass.type= "password";
     }
 }
+
+function showLoginPassword(){
+    var pass = document.getElementById('pass');
+    var show = document.getElementById('login_pss');
+    var checkbox = document.getElementById('login_pass');
+    if(checkbox.checked){
+        show.className = "fa-solid fa-eye";
+        pass.type= "text";
+    }
+    else if(show.className = "fa-solid fa-eye"){
+        show.className = "fa-solid fa-eye-slash"
+        pass.type= "password";
+    }
+
+}
+
+
+
+function findMyLocation(){
+    var lat_location = document.getElementById('lat');
+    var long_location = document.getElementById('long');
+
+    function success(position){
+        const latt = position.coords.latitude;
+        const lat= (Math.round(latt * 1000))/1000;
+        lat_location.value = lat;
+        const lng = position.coords.longitude;
+        const long = (Math.round(lng * 1000))/1000;
+        long_location.value = long;
+    }
+
+    function error(){
+        alert('Please allow the app to access location...');
+    }
+    navigator.geolocation.getCurrentPosition(success, error);
+}
+        
+    
     

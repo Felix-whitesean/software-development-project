@@ -31,14 +31,17 @@
             <label for="password">password:</label>
             <fieldset>  
                 <i class="fa fa-lock"></i>
-                <input type="password" name="password" required><br>
+                <input type="password" name="password" id="pass" required>
+                <label for="login_pass"><i id="login_pss" style="color: rgb(255,255,255,.6)" class="fa-solid fa-eye-slash" onclick="showLoginPassword()"></i></label>
+                <input type="checkbox" name="login_pass" id="login_pass" style="display: none;"> 
             </fieldset>
             <input type="checkbox" name="remember">
             <label for="remember">Remember Me.</label>
             <br><br><br>
-            <button type="submit">Submit</button>
+            <button type="submit" onclick="return formValidation()">Submit</button>
         </form>
     </div>
     
+    <script src="signup.js"></script>
 </body>
 </html>

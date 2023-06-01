@@ -55,6 +55,13 @@ fieldset{
     z-index: 1;
     cursor: pointer;
 }
+#login_pss{
+    float: right;
+    margin-left: -49px;
+    position: absolute;
+    z-index: 1;
+    cursor: pointer;
+}
 span{
     color: crimson;
     padding-left: 22px;

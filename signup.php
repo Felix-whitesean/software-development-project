@@ -1,8 +1,3 @@
-<?php
-
-
-
-?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -14,7 +9,7 @@
     <link rel="stylesheet" href="auth.css">
     <script src="https://kit.fontawesome.com/6aa0d943f8.js" crossorigin="anonymous"></script>
 </head>
-<body>
+<body onload="findMyLocation()">
     <div>
     <?php
     include ('header.php');
@@ -89,6 +84,14 @@
             <label for="conditions" required>I agree to the </label>
             <a href="#" target="_Blank" download>Terms and conditions</a>
             <br><br>
+
+            <fieldset style="display: none;">
+                <i class="fa-regular fa-envelope"></i>
+                <input type="text" name="lat" id="lat">
+                <input type="text" name="long" id="long">              
+            </fieldset>
+
+            <br>
             <button type="submit" onclick='return formValidation()'>Submit</button>
         </form>
     </div>
