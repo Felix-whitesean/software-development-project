@@ -22,12 +22,11 @@
     $sql = "SELECT * FROM members WHERE username = '$uname' and passwd = '$pass'";
     $result = mysqli_query($con,$sql);
     $row = mysqli_fetch_array($result,MYSQLI_ASSOC);
-    if($row){
         $class = $row['class'];
         $institution=$row['institution'];
         $tableName = $class.$institution;
         $tableName = str_replace(" ","",$tableName);
-    }
+
     $count = mysqli_num_rows($result);
 
     if($count == 1){

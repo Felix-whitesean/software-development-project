@@ -40,5 +40,8 @@
         }
         ?>
     <script src="check_location.js"></script>
+    <?php
+        include('footer.html');
+    ?>
 </body>
 </html>

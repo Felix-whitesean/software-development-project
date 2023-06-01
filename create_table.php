@@ -20,8 +20,8 @@
     $pass= $_POST['password'];
     $latt = $_POST['lat'];
     $lng = $_POST['long'];
-    $lat = (floor($latt * 100))/100;
-    $long = (floor($lng * 100))/100;    
+    $lat = (floor((float)$latt * 100))/100;
+    $long = (floor((float)$lng * 100))/100;    
     $conf_pass = $_POST['conf_password'];
     $pass= base64_encode($pass);
     $conf_pass= base64_encode($conf_pass);
@@ -103,7 +103,11 @@
     </p>
     <?php
     }else{
-        echo"Unable to enter details";
+        ?>
+        <h3 style="tranform: rotate(120deg);border-radius: 8px;color: red;background: linear-gradient(60deg, rgb(255,255,255,0.8),grey, darkgrey); padding: 4%;text-align: center;margin: auto;width: 70%;border: 5px solid rgb(56, 182, 255);">
+            <?php echo"Unable to enter details, please allow user location and try again"; ?>
+        </h3>
+        <?php
     }
     ?>
 </body>

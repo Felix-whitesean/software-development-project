@@ -18,7 +18,7 @@
     include ('header.php');
     ?>
     <div>
-        <form action="view.php" method="POST">
+        <form class="form" action="view.php" method="POST">
         <img src="logo3.png" alt="logo"style="width: 80px; height:80px;background: rgb(56, 182, 255,0.6);border-top-right-radius: 50%;border-top-left-radius: 50%;border-bottom-left-radius: 15px;border-bottom-right-radius: 15px;">
             <h3>Sign In</h3>
                 <label for="username">Username:</label>
@@ -41,7 +41,9 @@
             <button type="submit" onclick="return formValidation()">Submit</button>
         </form>
     </div>
-    
+    <?php
+        include('footer.html');
+    ?>
     <script src="signup.js"></script>
 </body>
 </html>
