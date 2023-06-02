@@ -14,7 +14,8 @@
     <?php
     include ('header.php');
     ?>
-        <form class="form" action="create_table.php" method="POST">
+        <div class = "form">
+        <form action="create_table.php" method="POST">
         <img src="logo3.png" alt="logo"style="width: 80px; height:80px;background: rgb(56, 182, 255,0.6);border-top-right-radius: 50%;border-top-left-radius: 50%;border-bottom-left-radius: 15px;border-bottom-right-radius: 15px;">
             <h3>Sign Up</h3>
             <legend><label for="username">Username:<span>*</span></label></legend>
@@ -86,15 +87,15 @@
             <br><br>
 
             <fieldset style="display: none;">
-                <i class="fa-regular fa-envelope"></i>
-                <input type="number" name="lat" id="lat">
-                <input type="number" name="long" id="long">              
+                <input type="text" name="lat" id="lat" style="display: none;">
+                <input type="text" name="long" id="long" style="display: none;">              
             </fieldset>
-            <button type="submit" onclick='return formValidation()'>Submit</button>
-            <br><br>
-            <a href="#links" id="problem_pass" onclick="help()">Have a problem signing up?</a>
-            
+
+            <button type="submit" id="submit" onclick="return formValidation()">Submit</button>
+            <br><br>            
         </form>
+        <a href="#links" id="problem_pass" onclick="help()">Have a problem signing up?</a>
+        </div>
     </div>
     <?php
         include('footer.html');

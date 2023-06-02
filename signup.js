@@ -12,8 +12,8 @@
         if(notEmpty(pass, "Enter a valid password")){
             if(notEmpty(conf_pass, "Confirm password")){
                 if(notEmpty(email, "Enter valid email")){
-                    if(notEmpty(institution, "Enter institutiion naame")){
-                        if(notEmpty(lvl, "Enter institutiion naame")){
+                    if(notEmpty(institution, "Enter institution name")){
+                        if(notEmpty(lvl, "Enter level of institution")){
                             if(notEmpty(department, "Enter the department of the institution")){
                                 if(notEmpty(className, "Enter the name of the class")){
                                     return true;
@@ -30,9 +30,13 @@
  function notEmpty(elem, helperMsg){
     if(elem.value.length == 0){
         alert(helperMsg);
+        elem.style.border = '1px solid red';
+        elem.style.borderWidth= '1px 1px 1px 0';
+        elem.style.borderStyle = 'dashed';
         elem.focus();
         return false;
     }
+    //document.getElementById('submit').disabled = true;
     return true;
 }
 
@@ -70,10 +74,10 @@ function findMyLocation(){
 
     function success(position){
         const latt = position.coords.latitude;
-        const lat= (Math.round(latt * 1000))/1000;
+        const lat= (Math.floor(latt * 1000))/1000;
         lat_location.value = lat;
         const lng = position.coords.longitude;
-        const long = (Math.round(lng * 1000))/1000;
+        const long = (Math.floor(lng * 1000))/1000;
         long_location.value = long;
     }
 

@@ -50,6 +50,7 @@
                     $paswd = base64_decode($pass);
                     echo"LOGIN DETAILS: Username-: $uname Password-: $paswd";
                     ?>
+                    <div class="form">
                     <form method="POST" action="update.php">
                         <h3 style="color: red; text-decoration: underline;">Alert! Do not skip this.</h3>
                         <script>alert("Please enter 1 student details")</script>
@@ -74,7 +75,9 @@
                             <input type="text"  name="class" value="<?php echo"$class";?>">
                         </fieldset>
 
-                        <button type="submit">Submit</btton>
+                        <button type="submit">Submit</button>
+                        </form>
+                        </div>
                     <?php
                 }
                 else{
