@@ -25,11 +25,12 @@
                     $myusername = $_SESSION['uname'];
                     $mypassword = $_SESSION['pass']; 
 
-                    $sql = "SELECT class,institution FROM members WHERE username = '$myusername' and passwd = '$mypassword'";
+                    $sql = "SELECT class,institution,email FROM members WHERE username = '$myusername' and passwd = '$mypassword'";
                     $result = mysqli_query($con,$sql);
                     $row = mysqli_fetch_array($result,MYSQLI_ASSOC);
                     $class = $row['class'];
                     $institution=$row['institution'];
+                    $email=$row['email'];                    
                     $tableName = $class.$institution;
                     $tableName = str_replace(" ","",$tableName);
                     
@@ -43,7 +44,6 @@
                                 border-top-right-radius: 50%;border-top-left-radius: 50%;border-bottom-left-radius: 15px;border-bottom-right-radius: 15px;">
                                 <nav>
                                     <a href="insert.php" target="_BLANK">Add Students</a>
-                                    <a href=>Mark Register</a>
                                     <a href=>View Attendance Report</a>
                                 </nav>
                                 
@@ -58,7 +58,10 @@
                                 $sql2 = "SELECT * FROM $tableName";
                                 $result2 = mysqli_query($con, $sql2);
                         if(mysqli_num_rows($result2)>0){
-                            
+                            ?>
+                            <form action="mailto:<?php echo"$email"?>" method="POST">
+
+                            <?php
                             while($row = mysqli_fetch_assoc($result2)) {
                                 $studReg = $row['reg_no'];
                                 $studName= $row['stud_name'];
@@ -66,14 +69,18 @@
                                 ?>
                                     <tr>
                                         <td><?php echo "$serial"; ?></td>
-                                        <td><?php echo"$studReg"; ?></td>
+                                        <td><input type="text" name="registration" value='<?php echo"$studReg"; ?>'></td>
                                         <td><?php echo"$studName"; ?></td>
-                                        <td><label>Present: <input type="radio" name="attendance" id="present"><br></label>
-                                        <label>Absent:<input type="radio" name="attendance" id="absent"></label>
+                                        <td><label>Present: <input type="checkbox" name="attendance_present" id="present"><br></label>
+                                        <label>Absent:<input type="checkbox" name="attendance_absent" id="absent"></label>
                                         </td>
                                     </tr>
                                 <?php
                             }
+                            ?>
+                            <button type="submit">SUBMIT</button>
+                            </form>
+                                    <?php
                         
                         }else{
                             echo"NO STUDENT RECORD FOUND";

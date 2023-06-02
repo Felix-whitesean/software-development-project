@@ -43,9 +43,9 @@
     ?>
     <p style="padding: 2%;background: rgb(0,0,9,0.6), color: red;">
     <?php
-    if (mysqli_query($con, $sql)) {
+    if ($pass == $conf_pass){
             sleep(1.5);
-            if ($pass == $conf_pass){
+            if (mysqli_query($con, $sql)) {
                 if(mysqli_query($con, $sql2)){
                     $paswd = base64_decode($pass);
                     echo"LOGIN DETAILS: Username-: $uname Password-: $paswd";
@@ -89,6 +89,12 @@
                     <?php
                 }
             }
+            else {
+                echo "Error: " . $sql . "<br>" . mysqli_error($con);
+                die();
+                }
+                mysqli_close($con);
+        }
             else{
                 echo '<script>alert("Password does not match!")</script>';
                 ?>
@@ -97,11 +103,6 @@
             }
             
 
-        } else {
-        echo "Error: " . $sql . "<br>" . mysqli_error($con);
-        die();
-        }
-        mysqli_close($con);
     ?>
     </p>
     <?php

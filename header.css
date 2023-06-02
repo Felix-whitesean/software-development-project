@@ -31,13 +31,15 @@ i{
     padding: 10px;
     font-size: 20px;
     border-radius: 15px;
+    font-weight: bold;
     text-transform: uppercase;
-    font-style: italic;
 }
 .navbar a:hover{
-    text-decoration: underline;
     color:rgb(56, 182, 255);
-    border: none;
+    padding-bottom: 4px;
+    border-bottom: 3px solid rgb(255, 45, 20);
+    border-radius: 0;
+    transition: transform 1.5s ease-in-out;
 }
 #signup{
     background: rgb(56, 182, 255);

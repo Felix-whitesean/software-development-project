@@ -92,6 +92,9 @@ textarea:hover{
     border: 3px solid rgb(56, 182, 255);
     text-align: center;
 }
+.copyright{
+    padding: 12px;
+}
 @media only screen and (max-width: 789px){
     .footer{
         display: inline-block;
