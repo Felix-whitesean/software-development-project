@@ -95,7 +95,7 @@ fieldset select{
     background: transparent;
 }
 fieldset option{
-    background:rgb(6, 8, 9, .3);
+    background:rgb(0, 0, 0, .3);
     color: rgb(56, 182, 255);
     cursor: pointer;
 }
@@ -104,6 +104,22 @@ fieldset i{
     margin-left: 3px;
     margin-top: 3px;
     color: rgb(56, 182, 255);
-    padding: 11px;
+    padding: 11px;   
+}
+#problem_pass{
+    color: green;
+    text-decoration: none;
+    border:1px solid rgb(56, 182, 255);
+    padding: 3%;
+    background: rgb(0,0,0,0.7);
+    font-style: italic;
+    text-transform: uppercase;
+}
+#problem_pass:hover{
+    color: white;
     
+}
+#terms{
+    color: blue;
+    text-decoration: none;
 }

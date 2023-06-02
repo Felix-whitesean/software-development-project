@@ -20,7 +20,7 @@
             <legend><label for="username">Username:<span>*</span></label></legend>
             <fieldset>
                 <i class="fa-regular fa-user"></i>
-                <input type="text" name="username" id="username" required>
+                <input type="text" name="username" id="user_name" required>
             </fieldset>
             <br>
 
@@ -82,7 +82,7 @@
 
             <input type="checkbox" name="conditions" style="height: 33px;" required>
             <label for="conditions" required>I agree to the </label>
-            <a href="#" target="_Blank" download>Terms and conditions</a>
+            <a href="#links" id="terms">Terms and conditions</a>
             <br><br>
 
             <fieldset style="display: none;">
@@ -90,9 +90,10 @@
                 <input type="number" name="lat" id="lat">
                 <input type="number" name="long" id="long">              
             </fieldset>
-
-            <br>
             <button type="submit" onclick='return formValidation()'>Submit</button>
+            <br><br>
+            <a href="#links" id="problem_pass" onclick="help()">Have a problem signing up?</a>
+            
         </form>
     </div>
     <?php

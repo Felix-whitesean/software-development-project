@@ -8,16 +8,19 @@ function findMyLocation(){
 
     function success(position){
         const latt = position.coords.latitude;
-        var lat= (Math.floor(latt*100))/100;
+        var lat= (Math.floor(latt*1000))/1000;
         const lng = position.coords.longitude;
-        const long = (Math.floor(lng*100))/100;
+        const long = (Math.floor(lng*1000))/1000;
         console.log(latti)
-        console.log(lon)
-        
+        console.log(lon)        
 
         if(latti == lat){
             if(lon == long){
                 window.location.replace('register.php');
+                console.log(lat)
+                console.log(long)
+                console.log(latti)
+                console.log(lon)        
             }
         }else{
             location.textContent = "Your're not at "+ inst;
@@ -28,8 +31,9 @@ function findMyLocation(){
         
     }
     function error(){
-        location.textContent = 'Unable to show current position. Please allow location in settings... Redirecting...';
-        window.location.replace('login.php');
+        location.textContent = 'Unable to show current position.\n Please allow location in settings...\n Redirecting...';
+        var redirect = document.getElementById('redirect');
+        redirect.outerHTML = '<meta http-equiv="refresh" content="10, login.php">';
     }
     navigator.geolocation.getCurrentPosition(success, error);
 }

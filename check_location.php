@@ -29,6 +29,7 @@
                     $inst = $row['institution'];
                 ?>
                 <h4 id ="location" style="color: red;"></h4>
+                <h4 id ="redirect" style="color: red;"></h4>
                 <input style="display:none" id="lattitude" value="<?php echo"$lattitude";?>">
                 <input style="display:none" id="longitude" value="<?php echo"$longitude";?>">
                 <input style="display:none" id="inst" value="<?php echo"$inst";?>">
@@ -41,6 +42,8 @@
         ?>
     <script src="check_location.js"></script>
     <?php
+        session_abort();
+        include('header.php');
         include('footer.html');
     ?>
 </body>

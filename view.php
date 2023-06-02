@@ -12,7 +12,7 @@
         <?php
         include ('header.php');
     $uname = $_POST['username'];
-    $pass = $_POST['password'];
+    $pass = $_POST['pass'];
     $pass = base64_encode($pass);
     $con = mysqli_connect("localhost","root","","register");
     if (mysqli_connect_error()){

@@ -1,5 +1,5 @@
  function formValidation(){
-    var uname = document.getElementById('username');
+    var uname = document.getElementById('user_name');
     var pass = document.getElementById('pass');
     var conf_pass = document.getElementById('conf_pass');
     var email = document.getElementById('email');
@@ -64,23 +64,6 @@ function showConfPassword(){
     }
 }
 
-function showLoginPassword(){
-    var pass = document.getElementById('pass');
-    var show = document.getElementById('login_pss');
-    var checkbox = document.getElementById('login_pass');
-    if(checkbox.checked){
-        show.className = "fa-solid fa-eye";
-        pass.type= "text";
-    }
-    else if(show.className = "fa-solid fa-eye"){
-        show.className = "fa-solid fa-eye-slash"
-        pass.type= "password";
-    }
-
-}
-
-
-
 function findMyLocation(){
     var lat_location = document.getElementById('lat');
     var long_location = document.getElementById('long');
@@ -96,9 +79,15 @@ function findMyLocation(){
 
     function error(){
         alert('Please allow the app to access location...');
+        lat_location.outerHTML = '<meta http-equiv="refresh" content="5,index.php">';
+        redirect.outerHTML = '<meta http-equiv="refresh" content="10, login.php">';
     }
     navigator.geolocation.getCurrentPosition(success, error);
 }
-        
+function help(){
+    var help = document.getElementById('help');
+    help.focus();
+    help.style.border = '1px solid white';
+}    
     
     

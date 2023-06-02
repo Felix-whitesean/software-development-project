@@ -24,26 +24,27 @@
                 <label for="username">Username:</label>
             <fieldset>
                 <i class="fa-regular fa-user"></i>
-                <input type="text" name="username" required> 
+                <input type="text" name="username" id="username" autocomplete="given-name" required> 
             </fieldset>
             <br>
 
-            <label for="password">password:</label>
+            <label for="pass">password:</label>
             <fieldset>  
                 <i class="fa fa-lock"></i>
-                <input type="password" name="password" id="pass" required>
+                <input type="password" name="pass" id="pass" required>
                 <label for="login_pass"><i id="login_pss" style="color: rgb(255,255,255,.6)" class="fa-solid fa-eye-slash" onclick="showLoginPassword()"></i></label>
                 <input type="checkbox" name="login_pass" id="login_pass" style="display: none;"> 
             </fieldset>
-            <input type="checkbox" name="remember">
+            <input type="checkbox" name="remember" id="remember">
             <label for="remember">Remember Me.</label>
-            <br><br><br>
+            <br><br>
+            <a href="forgot_pass">Forgot Password?</a>
             <button type="submit" onclick="return formValidation()">Submit</button>
         </form>
     </div>
     <?php
         include('footer.html');
     ?>
-    <script src="signup.js"></script>
+    <script src="login.js"></script>
 </body>
 </html>

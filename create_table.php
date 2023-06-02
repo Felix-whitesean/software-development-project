@@ -20,8 +20,8 @@
     $pass= $_POST['password'];
     $latt = $_POST['lat'];
     $lng = $_POST['long'];
-    $lat = (floor((float)$latt * 100))/100;
-    $long = (floor((float)$lng * 100))/100;    
+    $lat = (floor((float)$latt * 1000))/1000;
+    $long = (floor((float)$lng * 1000))/1000;    
     $conf_pass = $_POST['conf_password'];
     $pass= base64_encode($pass);
     $conf_pass= base64_encode($conf_pass);
