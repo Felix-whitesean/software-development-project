@@ -17,6 +17,9 @@ input[type='checkbox'] {
     cursor: pointer;
     accent-color:orangered;
 }
+.reg{
+    max-width: 90px;
+}
 nav a{
    color: rgb(6, 8, 56);
    text-decoration: none;
@@ -36,9 +39,10 @@ nav a:hover{
 nav{
     text-align: center;
     border: 3px solid white;
-    margin-left: 20px;
+    margin-left: 150px;
     padding: 16px;
     max-width: 450px;
+    margin-top: 100px;
 }
 @media only screen and (max-width: 698px){
     nav{

@@ -23,7 +23,7 @@
             </nav>  
         </div>
         <div class="head">
-            <img src="logo3.png" alt="LOGO">
+            <img src="logo3.png" alt="LOGO" onclick="home()">
             <div class="name">
                 <h2>Draxylstar Innovators</h2>
                 <h3>Think, try, innovate</h3>
@@ -32,3 +32,8 @@
     </div>
 </body>
 </html>
+<script>
+    function home(){
+        window.location.replace('index.php');
+    }
+</script>

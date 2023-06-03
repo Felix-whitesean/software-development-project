@@ -40,7 +40,7 @@
                         
                     if($count == 1) {
                         ?>
-                           <img src="logo3.png" alt="logo"style="width: 80px; height:80px;background: rgb(56, 182, 255,0.6);
+                           <img src="logo3.png" alt="logo"style="width: 80px; height:80px;background: rgb(56, 182, 255,0.6);position:fixed;margin-top: -80px;
                                 border-top-right-radius: 50%;border-top-left-radius: 50%;border-bottom-left-radius: 15px;border-bottom-right-radius: 15px;">
                                 <nav>
                                     <a href="insert.php" target="_BLANK">Add Students</a>
@@ -69,7 +69,7 @@
                                 ?>
                                     <tr>
                                         <td><?php echo "$serial"; ?></td>
-                                        <td><input type="text" name="registration" value='<?php echo"$studReg"; ?>'></td>
+                                        <td><input type="text" class="reg" name="registration" value='<?php echo"$studReg"; ?>'></td>
                                         <td><?php echo"$studName"; ?></td>
                                         <td><label>Present: <input type="checkbox" name="attendance_present" id="present"><br></label>
                                         <label>Absent:<input type="checkbox" name="attendance_absent" id="absent"></label>
