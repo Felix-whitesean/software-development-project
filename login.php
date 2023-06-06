@@ -22,17 +22,17 @@
         <img src="logo3.png" alt="logo"style="width: 80px; height:80px;background: rgb(56, 182, 255,0.6);border-top-right-radius: 50%;border-top-left-radius: 50%;border-bottom-left-radius: 15px;border-bottom-right-radius: 15px;">
             <h3>Sign In</h3>
                 <label for="username">Username:</label>
-            <fieldset>
+            <fieldset class="input">
                 <i class="fa-regular fa-user"></i>
                 <input type="text" name="username" id="username" autocomplete="given-name" required> 
             </fieldset>
             <br>
 
             <label for="pass">password:</label>
-            <fieldset>  
+            <fieldset class="input">  
                 <i class="fa fa-lock"></i>
                 <input type="password" name="pass" id="pass" required>
-                <label for="login_pass"><i id="login_pss" style="color: rgb(255,255,255,.6)" class="fa-solid fa-eye-slash" onclick="showLoginPassword()"></i></label>
+                <label for="login_pass"><i id="login_pss" style="color: rgb(255,255,255,.6)" class="fa-solid fa-eye" onclick="showLoginPassword()"></i></label>
                 <input type="checkbox" name="login_pass" id="login_pass" style="display: none;"> 
             </fieldset>
             <input type="checkbox" name="remember" id="remember">

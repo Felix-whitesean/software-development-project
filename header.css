@@ -9,17 +9,21 @@ h3{
     padding-left: 14px;
     text-transform: uppercase;
     font-style: italic;
+    text-shadow: 1px 1px 2px black, 0 0 1em rgb(56, 182, 255), 0 0 0.2em blue;
 }
 i{
     color:rgb(56, 182, 255);
     padding-right: 4px;
 }
 .name h2{
-    text-decoration: underline;
-    color: rgb(255, 45, 20);
+    margin-top: 29px;
+    background: linear-gradient(90deg,rgb(6, 8, 56),rgb(56, 182, 255),rgb(255, 45, 20),white);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     padding-left: 14px;
     text-transform: uppercase;
     border-radius: 15px;
+    //text-shadow: 1px 1px 2px rgb(56, 182, 255), 0 0 1em blue, 0 0 0.2em blue;
 }
 .navbar a{
     color:rgb(56, 182, 255);
@@ -34,11 +38,11 @@ i{
     text-transform: uppercase;
 }
 .navbar a:hover{
-    color:rgb(56, 182, 255);
+    color:rgb(56, 182, 255,.4);
     padding-bottom: 4px;
     border-bottom: 3px solid rgb(255, 45, 20);
     border-radius: 0;
-    transition: transform 1.5s ease-in-out;
+    transition: transform 800ms ease-in-out;
 }
 #signup{
     background: rgb(56, 182, 255);
@@ -137,10 +141,9 @@ i{
     }
     .name h2{
         max-width: 400px;
-        padding: 1.2%;
-        background: rgb(6, 8, 8, 0.9);
-        color: white;
         text-align: left;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
         border-radius: 12px;
     }
 }

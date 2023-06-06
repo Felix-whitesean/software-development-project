@@ -23,11 +23,11 @@ function showLoginPassword(){
     var show = document.getElementById('login_pss');
     var checkbox = document.getElementById('login_pass');
     if(checkbox.checked){
-        show.className = "fa-solid fa-eye";
+        show.className = "fa-solid fa-eye-slash";
         pass.type= "text";
     }
     else if(show.className = "fa-solid fa-eye"){
-        show.className = "fa-solid fa-eye-slash"
+        show.className = "fa-solid fa-eye"
         pass.type= "password";
     }
 

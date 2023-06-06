@@ -8,8 +8,8 @@
             <meta name="viewport" content="width=device-width, initial-scale=1.0">
             <title>DRAXYLSTAR-REGISTER | Users</title>
             <link rel="icon" href="logo3.png">
-            <link rel="stylesheet" href="auth.css">
             <link rel="stylesheet" href="reg.css">
+            <meta http-equiv="refresh" content="600, login.php">
         </head>
 
         <body>
@@ -30,7 +30,7 @@
                     $row = mysqli_fetch_array($result,MYSQLI_ASSOC);
                     $class = $row['class'];
                     $institution=$row['institution'];
-                    $email=$row['email'];                    
+                    $email=$row['email'];                   
                     $tableName = $class.$institution;
                     $tableName = str_replace(" ","",$tableName);
                     
@@ -40,8 +40,7 @@
                         
                     if($count == 1) {
                         ?>
-                           <img src="logo3.png" alt="logo"style="width: 80px; height:80px;background: rgb(56, 182, 255,0.6);position:fixed;margin-top: -80px;
-                                border-top-right-radius: 50%;border-top-left-radius: 50%;border-bottom-left-radius: 15px;border-bottom-right-radius: 15px;">
+                           <img class="img" src="logo3.png" alt="logo">
                                 <nav>
                                     <a href="insert.php" target="_BLANK">Add Students</a>
                                     <a href=>View Attendance Report</a>
@@ -57,31 +56,38 @@
                                     <?php
                                 $sql2 = "SELECT * FROM $tableName";
                                 $result2 = mysqli_query($con, $sql2);
+
+                                
                         if(mysqli_num_rows($result2)>0){
                             ?>
-                            <form action="mailto:<?php echo"$email"?>" method="POST">
+                            <form action='mailto: <?php echo"$email"; ?>'target="_BLANK" id="form" method="POST">
 
                             <?php
+                            $i = 0;
                             while($row = mysqli_fetch_assoc($result2)) {
-                                $studReg = $row['reg_no'];
-                                $studName= $row['stud_name'];
+                                $i ++;
+                                $studReg = $row['reg_no']."-".$i;
+                                $studName= $row['stud_name']."-".$i;
                                 $serial = $row['id'];
                                 ?>
                                     <tr>
-                                        <td><?php echo "$serial"; ?></td>
-                                        <td><input type="text" class="reg" name="registration" value='<?php echo"$studReg"; ?>'></td>
-                                        <td><?php echo"$studName"; ?></td>
-                                        <td><label>Present: <input type="checkbox" name="attendance_present" id="present"><br></label>
-                                        <label>Absent:<input type="checkbox" name="attendance_absent" id="absent"></label>
+                                        <td><?php echo "$i"; ?></td>
+                                        <td><input type="text" id="reg" class="reg" name="registration" value="<?php echo"$studReg"; ?>"></td>
+                                        <td><input type="text" value='<?php echo"$studName"; ?>' id="studName"> </td>
+                                        <td><label>Present: <input type="radio" class="name" name='<?php echo"$studName";  ?>' value="present" id="present" required><br></label>
+                                        <label>Absent:<input type="radio" name='<?php echo"$studName";  ?>' value="absent" id="absent" required></label>
                                         </td>
                                     </tr>
-                                <?php
+                            <?php
                             }
                             ?>
-                            <button type="submit">SUBMIT</button>
+                            </table>
+                            <br>
+                            <textarea class="comt" placeholder="//comment"></textarea><br>
+                            <button type="submit" name="btn">SUBMIT</button><br><br>
                             </form>
-                                    <?php
-                        
+                            <?php
+                            
                         }else{
                             echo"NO STUDENT RECORD FOUND";
                             echo"PLEASE INSERT STUDENT RECORDS";
@@ -95,15 +101,20 @@
                 }
                 else{
                     ?>
-                    <meta http-equiv="refresh" content="5,login.php">
                      <h3><?php echo"Please Login First And Try Again...<br>Redirecting...";?></h3>
+                     <meta http-equiv="refresh" content="5,login.php">
                      <?php
                 }
 
             ?>
-            </table>
         </body>
-        <?php
-            include('footer.html');
-        ?>
+        
     </html>
+<?php
+   include('footer.html');
+?>
+
+
+
+
+

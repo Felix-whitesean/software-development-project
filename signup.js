@@ -45,11 +45,11 @@ function showPassword(){
     var show = document.getElementById('show_pss');
     var checkbox = document.getElementById('check');
     if(checkbox.checked){
-        show.className = "fa-solid fa-eye";
+        show.className = "fa-solid fa-eye-slash";
         pass.type= "text";
     }
     else if(show.className = "fa-solid fa-eye"){
-        show.className = "fa-solid fa-eye-slash"
+        show.className = "fa-solid fa-eye"
         pass.type= "password";
     }
 
@@ -59,11 +59,11 @@ function showConfPassword(){
     var show2 = document.getElementById('show_conf_pss');
     var checkbox = document.getElementById('check2');
     if(checkbox.checked){
-        show2.className = "fa-solid fa-eye";
+        show2.className = "fa-solid fa-eye-slash";
         confirm_pass.type= "text";
     }
     else{
-        show2.className = "fa-solid fa-eye-slash";
+        show2.className = "fa-solid fa-eye";
         confirm_pass.type= "password";
     }
 }

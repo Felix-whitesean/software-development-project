@@ -16,7 +16,7 @@ body{
     align-items: center;
     text-align: center;
 }
-input{
+.input input{
     height: 30px;
     border-radius: 20px;
     border-top-left-radius: 0;
@@ -34,7 +34,7 @@ input{
 input:focus{
     outline: none;
 }
-fieldset{
+.input{
     border: 3px solid white;
     width: 33px;
     margin: auto;
@@ -99,7 +99,7 @@ fieldset option{
     color: rgb(56, 182, 255);
     cursor: pointer;
 }
-fieldset i{
+.input i{
     position: absolute;
     margin-left: 3px;
     margin-top: 3px;

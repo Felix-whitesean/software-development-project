@@ -55,12 +55,12 @@
                         <h3 style="color: red; text-decoration: underline;">Alert! Do not skip this.</h3>
                         <script>alert("Please enter 1 student details")</script>
                         <h2>Enter at least one Student record</h2>
-                        <fieldset>
+                        <fieldset class="input">
                             <legend><label for="reg_no">Registration number:</label></legend>
                             <input type="text" name="reg_no" required> 
                         </fieldset>
 
-                        <fieldset>
+                        <fieldset class="input">
                             <legend><label for="stud_name"> Name:</label></legend>
                             <input type="text" name="stud_name" required> 
                         </fieldset>

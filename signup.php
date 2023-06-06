@@ -19,38 +19,38 @@
         <img src="logo3.png" alt="logo"style="width: 80px; height:80px;background: rgb(56, 182, 255,0.6);border-top-right-radius: 50%;border-top-left-radius: 50%;border-bottom-left-radius: 15px;border-bottom-right-radius: 15px;">
             <h3>Sign Up</h3>
             <legend><label for="username">Username:<span>*</span></label></legend>
-            <fieldset>
+            <fieldset class="input">
                 <i class="fa-regular fa-user"></i>
                 <input type="text" name="username" id="user_name" required>
             </fieldset>
             <br>
 
             <legend><label for="password">Password:<span>*</span></label></legend>
-            <fieldset>
+            <fieldset class="input">
                 <i class="fa fa-lock"></i>
                 <input type="password" name="password" id="pass" required>
-                <label for="check"><i id="show_pss" style="color: rgb(255,255,255,.6)" class="fa-solid fa-eye-slash" onclick="showPassword()"></i></label>
+                <label for="check"><i id="show_pss" style="color: rgb(255,255,255,.6)" class="fa-solid fa-eye" onclick="showPassword()"></i></label>
                 <input type="checkbox" name="check" id="check" style="display: none;">   
             </fieldset>
             <br>
 
             <legend><label for="conf_password">Confirm Password:<span>*</span></label></legend>
-            <fieldset>
+            <fieldset class="input">
                 <i class="fa fa-lock"></i>
                 <input type="password" name="conf_password" id="conf_pass" required>
-                <label for="check2"><i id="show_conf_pss" style="color: rgb(255,255,255,.6)" class="fa-solid fa-eye-slash" onclick="showConfPassword()"></i></label>
+                <label for="check2"><i id="show_conf_pss" style="color: rgb(255,255,255,.6)" class="fa-solid fa-eye" onclick="showConfPassword()"></i></label>
                 <input type="checkbox" name="check" id="check2" style="display: none;">            
             </fieldset>
             <br>
             <legend><label for="email">Email:<span>*</span></label></legend>
-            <fieldset>
+            <fieldset class="input">
                 <i class="fa-regular fa-envelope"></i>
                 <input type="email" name="email" id="email" required>              
             </fieldset>
             <br>
 
             <legend><label for="lvl">Level: <span>*</span></label></legend>
-            <fieldset>
+            <fieldset class="input">
                 <select name="lvl" id="int_type" required>
                     <option disabled="disabled" selected="selected" style="display:none;">Select the institution</option>
                     <option value="university">University</option>
@@ -61,21 +61,21 @@
             </fieldset>
             <br>
             <legend><label for="institution" required>Institution name:<span>*</span></label></legend>
-            <fieldset>
+            <fieldset class="input">
                 <i class="fa fa-school-flag"></i>
                 <input type="text"  name="inst_name" id="institution" required>
             </fieldset>
             <br>
 
             <legend><label for="department" >Department: <span>*</span></label></legend>
-            <fieldset>
+            <fieldset class="input">
                 <i class="fa fa-building-user"></i>
                 <input type="text"  name="department" id="department" required>
             </fieldset>
             <br>
 
             <legend><label for="class" required>Class:<span>*</span></label></legend>
-            <fieldset>
+            <fieldset class="input">
                 <i class="fa-solid fa-screen-users"></i>
                 <input type="text"  name="class" id="class">
             </fieldset>
