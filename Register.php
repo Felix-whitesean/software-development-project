@@ -43,7 +43,6 @@
                            <img class="img" src="logo3.png" alt="logo">
                                 <nav>
                                     <a href="insert.php" target="_BLANK">Add Students</a>
-                                    <a href=>View Attendance Report</a>
                                 </nav>
                                 
                             <table>
