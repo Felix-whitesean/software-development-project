@@ -38,7 +38,6 @@
             <input type="checkbox" name="remember" id="remember">
             <label for="remember">Remember Me.</label>
             <br><br>
-            <a href="forgot_pass">Forgot Password?</a>
             <button type="submit" onclick="return formValidation()">Submit</button>
         </form>
     </div>
