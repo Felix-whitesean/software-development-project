@@ -36,7 +36,6 @@
                 <input type="checkbox" name="login_pass" id="login_pass" style="display: none;"> 
             </fieldset>
             <input type="checkbox" name="remember" id="remember">
-            <label for="remember">Remember Me.</label>
             <br><br>
             <button type="submit" onclick="return formValidation()">Submit</button>
         </form>
