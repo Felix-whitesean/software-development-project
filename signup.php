@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DRAXYLSTAR-REGISTER | Sign Up</title>
+    <title>AUTO-ATTENDANCE | Sign Up</title>
     <link rel="icon" href="logo3.png">
     <link rel="stylesheet" href="auth.css">
     <script src="https://kit.fontawesome.com/6aa0d943f8.js" crossorigin="anonymous"></script>

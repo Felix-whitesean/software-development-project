@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Checking location...</title>
+    <title>AUTO-ATTENDANCE | Checking location...</title>
     <link rel="icon" href="logo3.png">
     <meta http-equiv="refresh" content="60">
 </head>
