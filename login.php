@@ -19,7 +19,6 @@
     ?>
     <div>
         <form class="form" action="view.php" method="POST">
-        <img src="logo3.png" alt="logo"style="width: 80px; height:80px;background: rgb(56, 182, 255,0.6);border-top-right-radius: 50%;border-top-left-radius: 50%;border-bottom-left-radius: 15px;border-bottom-right-radius: 15px;">
             <h3>Sign In</h3>
                 <label for="username">Username:</label>
             <fieldset class="input">
@@ -35,7 +34,6 @@
                 <label for="login_pass"><i id="login_pss" style="color: rgb(255,255,255,.6)" class="fa-solid fa-eye" onclick="showLoginPassword()"></i></label>
                 <input type="checkbox" name="login_pass" id="login_pass" style="display: none;"> 
             </fieldset>
-            <input type="checkbox" name="remember" id="remember">
             <br><br>
             <button type="submit" onclick="return formValidation()">Submit</button>
         </form>

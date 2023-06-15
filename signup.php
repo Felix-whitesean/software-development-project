@@ -16,7 +16,6 @@
     ?>
         <div class = "form">
         <form action="create_table.php" method="POST">
-        <img src="logo3.png" alt="logo"style="width: 80px; height:80px;background: rgb(56, 182, 255,0.6);border-top-right-radius: 50%;border-top-left-radius: 50%;border-bottom-left-radius: 15px;border-bottom-right-radius: 15px;">
             <h3>Sign Up</h3>
             <legend><label for="username">Username:<span>*</span></label></legend>
             <fieldset class="input">
