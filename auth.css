@@ -41,6 +41,13 @@ input:focus{
     border-radius: 25px;
     padding: 2px;
 }
+.input i{
+    position: absolute;
+    margin-left: 3px;
+    margin-top: 3px;
+    color: rgb(56, 182, 255);
+    padding: 11px;   
+}
 #show_pss{
     float: right;
     margin-left: -49px;
@@ -72,6 +79,7 @@ label{
     text-align: left;
     margin: 23% auto;
 }
+
 button{
     background: rgb(56, 182, 255);
     box-shadow: 2px 2px rgb(26, 28, 96,0.5);
@@ -98,13 +106,6 @@ fieldset option{
     background:rgb(0, 0, 0, .3);
     color: rgb(56, 182, 255);
     cursor: pointer;
-}
-.input i{
-    position: absolute;
-    margin-left: 3px;
-    margin-top: 3px;
-    color: rgb(56, 182, 255);
-    padding: 11px;   
 }
 #problem_pass{
     color: green;
